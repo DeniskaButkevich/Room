@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<nav th:fragment="header">
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" th:attrappend="class=${#strings.contains(url_active,'main page') ? ' active': ''}">
+                <a class="nav-link" href="/admins/indexAdmin">Home</a>
+            </li>
+            <li class="nav-item" th:attrappend="class=${#strings.contains(url_active,'product') ? ' active': ''}">
+                <a class="nav-link" href="/admins/product">Product</a>
+            </li>
+        </ul>
+    </div>
+</nav>
