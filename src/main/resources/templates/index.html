@@ -65,13 +65,16 @@
                 <td>[[*{name}]]</td>
                 <td>[[*{country.name_en}]]</td>
                 <th:block th:if="${room.country.name_en == myCountry}">
-                    <td><a th:href="'room/' + *{id}">come in</a></td>
+                    <td>
+                        <button class="btn btn-primary" th:onclick="'location.href=&quot;room/' + ${room.id} + '&quot;'">come in</button>
+                    </td>
                 </th:block>
                 <th:block th:unless="${room.country.name_en == myCountry}">
-                    <td><a href="#" onclick="alert('your country is different')">come in</a></td>
+                    <td>
+                        <button type="submit" class="btn btn-primary" th:onclick="alert('your country is different')">come in</button>
+                    </td>
                 </th:block>
-                <td th:id="'td-' + *{id}" th:if="${room.lamp == true ? 'On' : 'Off'}">off</td>
-                <td th:id="'td-' + *{id}">off</td>
+                <td th:id="'td-' + *{id}" th:text="${room.lamp == true ? 'On' : 'Off'}"></td>
                 <td>
                     <form method="post" th:action="'/room/delete/' + *{id}">
                         <button type="submit">delete</button>

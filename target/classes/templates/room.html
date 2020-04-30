@@ -7,21 +7,18 @@
 
 </head>
 <body id="body_room" th:attrappend="class=${room.lamp == true ? 'body-active-true' : 'body-active-false'}">
-<!--<row>
-    <nav th:include="parts/header.html :: header(url_active='Room')" class="navbar navbar-expand-lg navbar-dark bg-primary"></nav>
-</row>-->
 <div class="container mt-5" style="text-align: center;">
 <h2 th:text="'You in the room number ' + ${room.id} + ' with name ' + ${room.name}"></h2>
     <br>
         <th:block th:if="${room.isLamp() == true}">
-            <button th:id="'td-' + ${room.id}" th:onclick="'switching(' + ${room.id} + ')'" style="border: 2px solid" class="btn btn-default" type="submit">On</button>
+            <button th:id="'td-' + ${room.id}" th:onclick="'switching(' + ${room.id} + ')'" style="border: 2px solid" class="btn btn-default" type="button">On</button>
         </th:block>
         <th:block th:unless="${room.isLamp() == true}">
-            <button th:id="'td-' + ${room.id}" th:onclick="'switching(' + ${room.id} + ')'" style="border: 2px solid" class="btn btn-default" type="submit">Off</button>
+            <button th:id="'td-' + ${room.id}" th:onclick="'switching(' + ${room.id} + ')'" style="border: 2px solid" class="btn btn-default" type="button">Off</button>
         </th:block>
     <br>
     <br>
     <h4> <a href="/">return to main page</a></h4>
 </div>
 </body>
-</html>
+    </html>

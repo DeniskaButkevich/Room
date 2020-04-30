@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="258493d4-9f9d-43cb-bce5-cde5b850348a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/Controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dez/room/Controller/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/Controller/RoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dez/room/Controller/RoomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/room.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,7 +97,7 @@
       <workItem from="1588185539896" duration="11734000" />
       <workItem from="1588203649609" duration="2342000" />
       <workItem from="1588231328097" duration="15264000" />
-      <workItem from="1588261814640" duration="17581000" />
+      <workItem from="1588261814640" duration="21708000" />
     </task>
     <servers />
   </component>
