@@ -14,13 +14,13 @@
 <h2 th:text="'You in the room number ' + ${room.id}"></h2>
     <br>
         <th:block th:if="${room.isLamp() == true}">
-            <h4 id="send" class="btn btn-default" type="submit">Off</h4>
+            <h4 onclick="sendName()" class="btn btn-default" type="submit">Off</h4>
         </th:block>
         <th:block th:unless="${room.isLamp() == true}">
-            <h4 id="send" class="btn btn-default" type="submit">On</h4>
+            <h4 onclick="sendName()" class="btn btn-default" type="submit">On</h4>
         </th:block>
     <br>
-    <h4> <a href="/index">return to main page</a></h4>
+    <h4> <a href="/">return to main page</a></h4>
 </div>
 </body>
 </html>

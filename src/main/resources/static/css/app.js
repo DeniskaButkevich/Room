@@ -48,9 +48,9 @@ function showGreeting(message) {
     $("#greetings").append("<tr><td>" + message + "</td></tr>");
 }
 
-$(function () {
-    $("form").on('submit', function (e) {
-        e.preventDefault();
-    });
-    $( "#send" ).click(function() { sendName(); });
-});
+// $(function () {
+//     $("form").on('submit', function (e) {
+//         e.preventDefault();
+//     });
+//     $( "#send" ).click(function() { sendName(); });
+// });

@@ -18,7 +18,7 @@
     </a>
     <div class="collapse " id="collapseExample" th:attrappend="class=${room != null ? ' show' : ''}">
         <div class="form-group mt-3">
-            <form action="/index" method="post" enctype="multipart/form-data">
+            <form  method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <input type="text" class="form-control" th:value="${room != null ? room.name : ''}"
                            name="name" placeholder="name"
@@ -59,6 +59,37 @@
                 <td>[[*{country}]]</td>
                 <td><a th:href="'room/' + *{id}">come in</a></td>
                 <td>off</td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+    <br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">key</th>
+            <th scope="col">value</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr th:each="instance : ${maps}">
+                <td th:text="${instance.key}">keyvalue</td>
+                <td th:text="${instance.value}">num</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">value</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="arr, i : *{arrays}" >
+            <tr>
+                <th>[[${i}]]</th>
+                <td>[[${arr}]]</td>
             </tr>
         </th:block>
         </tbody>
