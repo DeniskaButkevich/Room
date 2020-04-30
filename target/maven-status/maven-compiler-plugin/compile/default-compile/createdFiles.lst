@@ -1,0 +1,3 @@
+com\dez\room\RoomsWithLampApplication.class
+com\dez\room\Controller\IndexController.class
+com\dez\room\utils\WebUtils.class

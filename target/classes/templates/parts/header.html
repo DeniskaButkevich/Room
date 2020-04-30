@@ -4,7 +4,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <nav th:fragment="header">
-    
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -15,8 +15,8 @@
             <li class="nav-item" th:attrappend="class=${#strings.contains(url_active,'main page') ? ' active': ''}">
                 <a class="nav-link" href="/admins/indexAdmin">Home</a>
             </li>
-            <li class="nav-item" th:attrappend="class=${#strings.contains(url_active,'product') ? ' active': ''}">
-                <a class="nav-link" href="/admins/product">Product</a>
+            <li class="nav-item" th:attrappend="class=${#strings.contains(url_active,'Room') ? ' active': ''}">
+                <a class="nav-link" href="#">Room</a>
             </li>
         </ul>
     </div>

@@ -11,7 +11,58 @@
     <nav th:include="parts/header.html :: header(url_active='main page')" class="navbar navbar-expand-lg navbar-dark bg-primary"></nav>
 </row>
 <div class="container mt-5">
-    <h2 th:text="Welcome "></h2>
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+       aria-expanded="false"
+       aria-controls="collapseExample">
+        Add new Room
+    </a>
+    <div class="collapse " id="collapseExample" th:attrappend="class=${room != null ? ' show' : ''}">
+        <div class="form-group mt-3">
+            <form action="/index" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input type="text" class="form-control" th:value="${room != null ? room.name : ''}"
+                           name="name" placeholder="name"
+                           th:attrappend="class=${nameError != null} ? ' is-invalid' : ''">
+                    <div class="invalid-feedback" th:if="${nameError != null}">[[${nameError}]]</div>
+                </div>
+
+                <div class="form-group">
+                        <select class="form-control" th:value="${room != null ? room.name : ''}"
+                                id="exampleFormControlSelect1" name="country" title="country">
+                            <th:block th:each="country : ${countries}">
+                                <option th:text="${country}"></option>
+                            </th:block>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Country</th>
+            <th scope="col">Door</th>
+            <th scope="col">Lamp</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="room : *{rooms}" th:object="${room}">
+            <tr>
+                <th scope="row">[[*{id}]]</th>
+                <td>[[*{name}]]</td>
+                <td>[[*{country}]]</td>
+                <td><a th:href="'room/' + *{id}">come in</a></td>
+                <td>off</td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
 </div>
 </body>
 </html>
