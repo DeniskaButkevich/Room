@@ -36,7 +36,7 @@ public class RoomController {
             room.setLamp(false);
         }
         roomRepo.save(room);
-        return  id ;
+        return  id + "-" + room.isLamp();
     }
 
 }
