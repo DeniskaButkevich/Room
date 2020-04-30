@@ -1,9 +1,6 @@
 package com.dez.room.data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Room {
@@ -12,14 +9,16 @@ public class Room {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private String country;
+
+    @ManyToOne
+    private Country country;
     private boolean lamp;
 
 
     public Room() {
     }
 
-    public Room(String name, String country, boolean lamp) {
+    public Room(String name, Country country, boolean lamp) {
         this.name = name;
         this.country = country;
         this.lamp = lamp;
@@ -41,11 +40,11 @@ public class Room {
         this.name = name;
     }
 
-    public String getCountry() {
+    public Country getCountry() {
         return country;
     }
 
-    public void setCountry(String country) {
+    public void setCountry(Country country) {
         this.country = country;
     }
 

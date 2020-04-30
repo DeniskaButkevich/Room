@@ -27,9 +27,16 @@ public class RoomController {
 
     @MessageMapping("/hello")
     @SendTo("/topic/greetings")
-    public String greeting(String message) throws Exception {
-        Thread.sleep(1000); // simulated delay
-        return "Hello, " + message + "!";
+    public String greeting(String id) {
+        Room room = roomRepo.findById(Long.parseLong(id)).get();
+
+        if(!room.isLamp()){
+            room.setLamp(true);
+        }else {
+            room.setLamp(false);
+        }
+        roomRepo.save(room);
+        return  id ;
     }
 
 }

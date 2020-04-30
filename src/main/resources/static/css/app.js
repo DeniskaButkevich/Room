@@ -7,6 +7,14 @@ window.onbeforeunload = function () {
     disconnect();
 };
 
+function disconnect() {
+    if (stompClient !== null) {
+        stompClient.disconnect();
+    }
+    setConnected(false);
+    console.log("Disconnected");
+}
+
 function setConnected(connected) {
     $("#connect").prop("disabled", connected);
     $("#disconnect").prop("disabled", !connected);
@@ -25,32 +33,34 @@ function connect() {
     stompClient.connect({}, function (frame) {
         setConnected(true);
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/topic/greetings', function (greeting) {
-            showGreeting(JSON.parse(greeting.body).content);
+        stompClient.subscribe('/topic/greetings', function (id) {
+            turning(id);
         });
     });
 }
 
-function disconnect() {
-    if (stompClient !== null) {
-        stompClient.disconnect();
+function switching(id) {
+    stompClient.send("/app/hello", {}, id);
+}
+
+function turning(id) {
+    var th_id = 'th-' + id.body;
+    var td_id = 'td-' + id.body;
+    var th_elem = document.getElementById(th_id);
+    var td_elem = document.getElementById(td_id);
+
+    if(th_elem != null){
+        if(th_elem.classList.contains("lamp-active")){
+            th_elem.classList.remove("lamp-active")
+        }else {
+            th_elem.classList.add("lamp-active");
+        }
     }
-    setConnected(false);
-    console.log("Disconnected");
+    if(td_elem != null) {
+        if (td_elem.innerText == "On") {
+            td_elem.innerText = "Off";
+        } else {
+            td_elem.innerText = "On";
+        }
+    }
 }
-
-function sendName() {
-    alert();
-    stompClient.send("/app/hello", {}, JSON.stringify({'on': $("#name").val()}));
-}
-
-function showGreeting(message) {
-    $("#greetings").append("<tr><td>" + message + "</td></tr>");
-}
-
-// $(function () {
-//     $("form").on('submit', function (e) {
-//         e.preventDefault();
-//     });
-//     $( "#send" ).click(function() { sendName(); });
-// });
