@@ -3,10 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="258493d4-9f9d-43cb-bce5-cde5b850348a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dez/room/Controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/Controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dez/room/Controller/RoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/Repo/CountryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dez/room/Repo/CountryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dez/room/config/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/data/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dez/room/data/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/data/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dez/room/data/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/utils/WebUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/header.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dez/room/RoomsWithLampApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dez/room/Controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/Controller/RoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dez/room/Controller/RoomController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/config/WebSocketConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dez/room/config/WebSocketConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/data/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dez/room/data/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/data/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dez/room/data/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/utils/WebUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/header.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dez/room/RoomsWithLampApplicationTests.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +44,10 @@
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,11 +72,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.dez.room.Controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Desktop\java\room\src\test\java\resources" />
       <recent name="C:\Desktop\java\room\src\main\resources" />
     </key>
   </component>
@@ -66,10 +105,84 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RoomsWithLampApplication">
-    <configuration name="room-0.0.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/target/room-0.0.1-SNAPSHOT.jar" />
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.WebsocketTest">
+    <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="room" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dez.room.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dez.room" />
+      <option name="MAIN_CLASS_NAME" value="com.dez.room.IntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegrationTest.addRoomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="room" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dez.room.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dez.room" />
+      <option name="MAIN_CLASS_NAME" value="com.dez.room.IntegrationTest" />
+      <option name="METHOD_NAME" value="addRoomTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegrationTest.countryВefinitionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="room" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dez.room.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dez.room" />
+      <option name="MAIN_CLASS_NAME" value="com.dez.room.IntegrationTest" />
+      <option name="METHOD_NAME" value="countryВefinitionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTest.getIpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="room" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dez.room.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dez.room" />
+      <option name="MAIN_CLASS_NAME" value="com.dez.room.UnitTest" />
+      <option name="METHOD_NAME" value="getIpTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebsocketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="room" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dez.room.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dez.room" />
+      <option name="MAIN_CLASS_NAME" value="com.dez.room.WebsocketTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="RoomsWithLampApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="room" />
@@ -80,7 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.room-0.0.1-SNAPSHOT.jar" />
+        <item itemvalue="JUnit.WebsocketTest" />
+        <item itemvalue="JUnit.IndexIntegrationTest" />
+        <item itemvalue="JUnit.IndexIntegrationTest.addRoomTest" />
+        <item itemvalue="JUnit.IndexIntegrationTest.countryВefinitionTest" />
+        <item itemvalue="JUnit.UnitTest.getIpTest" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +214,8 @@
       <workItem from="1588185539896" duration="11734000" />
       <workItem from="1588203649609" duration="2342000" />
       <workItem from="1588231328097" duration="15264000" />
-      <workItem from="1588261814640" duration="21708000" />
+      <workItem from="1588261814640" duration="30821000" />
+      <workItem from="1588325404450" duration="25493000" />
     </task>
     <servers />
   </component>
@@ -118,7 +236,19 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/resources/static/css/app.js</url>
+          <line>19</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((MockMethodInterceptor)this.mockitoInterceptor).handler" custom="javax.servlet.http.HttpServletRequest,org.mockito.internal.creation.bytebuddy.MockMethodInterceptor" />
+      </configuration>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="((HashMap.Node)((HashMap)map_ip).entrySet().toArray()[12]).getKey()" custom="java.util.HashMap.Node,java.util.HashMap" />
       </configuration>

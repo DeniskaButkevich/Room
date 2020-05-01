@@ -1,8 +1,11 @@
 package com.dez.room.Controller;
 
+import com.dez.room.Repo.CountryRepo;
 import com.dez.room.Repo.RoomRepo;
 import com.dez.room.data.Room;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.dez.room.util.IpUtil;
+import com.github.sypexgeo.SxRestClient;
+import com.github.sypexgeo.model.SxGeoResult;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
@@ -10,31 +13,49 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.Optional;
+
 @Controller
 public class RoomController {
 
-    @Autowired
-    RoomRepo roomRepo;
+    private RoomRepo roomRepo;
+    private CountryRepo countryRepo;
+
+    public RoomController(RoomRepo roomRepo, CountryRepo countryRepo){
+        this.roomRepo = roomRepo;
+        this.countryRepo = countryRepo;
+}
 
     @GetMapping("room/{id}")
-    public String getRoom(@PathVariable String id, Model model){
+    public String getRoom(@PathVariable String id, Model model, HttpServletRequest request){
 
-        Room room =roomRepo.findById(Long.parseLong(id)).get();
-        model.addAttribute("room", room);
+        SxGeoResult result = SxRestClient.create("").get(IpUtil.fetchClientIpAddr(request));
 
-        return "room";
+        if(result.country != null){
+            Optional<Room> optional_room = roomRepo.findById(Long.parseLong(id));
+            if(optional_room != null){
+                Room  room =  optional_room.get();
+                if(result.country.name.en().equals(room.getCountry().getName_en())){
+                    model.addAttribute("room", room);
+                    return "room";
+                }
+            }
+        }
+        model.addAttribute("rooms", roomRepo.findAll());
+        model.addAttribute("myCountry","Anonymous");
+        model.addAttribute("countries", countryRepo.findAll());
+        return "index";
     }
 
-    @MessageMapping("/hello")
-    @SendTo("/topic/greetings")
-    public String greeting(String id) {
+    @MessageMapping("/room")
+    @SendTo("/topic/lamp")
+    public String turning(String id) {
         Room room = roomRepo.findById(Long.parseLong(id)).get();
 
-        if(!room.isLamp()){
-            room.setLamp(true);
-        }else {
-            room.setLamp(false);
-        }
+        boolean flag =  room.isLamp() == true ? false : true;
+        room.setLamp(flag);
+
         roomRepo.save(room);
         return  id + "-" + room.isLamp();
     }

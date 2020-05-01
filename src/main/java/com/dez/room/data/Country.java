@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "sxgeo_country")
 public class Country {
-
     @Id
     private short id;
     @Length(max = 2)

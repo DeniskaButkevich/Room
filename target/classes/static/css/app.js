@@ -3,6 +3,7 @@ var stompClient = null;
 window.onload = function () {
     connect();
 };
+
 window.onbeforeunload = function () {
     disconnect();
 };
@@ -11,36 +12,20 @@ function disconnect() {
     if (stompClient !== null) {
         stompClient.disconnect();
     }
-    setConnected(false);
-    console.log("Disconnected");
-}
-
-function setConnected(connected) {
-    $("#connect").prop("disabled", connected);
-    $("#disconnect").prop("disabled", !connected);
-    if (connected) {
-        $("#conversation").show();
-    }
-    else {
-        $("#conversation").hide();
-    }
-    $("#greetings").html("");
 }
 
 function connect() {
-    var socket = new SockJS('/gs-guide-websocket');
+    var socket = new SockJS('/dez-room-websocket');
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
-        setConnected(true);
-        console.log('Connected: ' + frame);
-        stompClient.subscribe('/topic/greetings', function (result) {
+        stompClient.subscribe('/topic/lamp', function (result) {
             turning(result);
         });
     });
 }
 
 function switching(id) {
-    stompClient.send("/app/hello", {}, id);
+    stompClient.send("/app/room", {}, id);
 }
 
 function turning(result) {

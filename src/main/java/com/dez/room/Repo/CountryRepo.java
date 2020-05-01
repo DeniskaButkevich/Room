@@ -1,6 +1,5 @@
 package com.dez.room.Repo;
 
-
 import com.dez.room.data.Country;
 import org.springframework.data.repository.CrudRepository;
 
