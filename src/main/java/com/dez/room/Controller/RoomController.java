@@ -31,21 +31,19 @@ public class RoomController {
     public String getRoom(@PathVariable String id, Model model, HttpServletRequest request){
 
         SxGeoResult result = SxRestClient.create("").get(IpUtil.fetchClientIpAddr(request));
-
+        roomRepo.findById(Long.parseLong(id)).get();
         if(result.country != null){
             Optional<Room> optional_room = roomRepo.findById(Long.parseLong(id));
             if(optional_room != null){
                 Room  room =  optional_room.get();
-                if(result.country.name.en().equals(room.getCountry().getName_en())){
+                if(result.country.name.en().equals(room.getCountry().getNameEn())){
                     model.addAttribute("room", room);
                     return "room";
                 }
             }
         }
-        model.addAttribute("rooms", roomRepo.findAll());
-        model.addAttribute("myCountry","Anonymous");
-        model.addAttribute("countries", countryRepo.findAll());
-        return "index";
+        model.addAttribute("room", null);
+        return "room";
     }
 
     @MessageMapping("/room")

@@ -33,7 +33,7 @@ public class IndexController {
         String country = result.country == null ? "Anonymous" : result.country.name.en();
         model.addAttribute("myCountry", country);
         model.addAttribute("rooms", roomRepo.findAll());
-        model.addAttribute("countries", countryRepo.findAll());
+        model.addAttribute("countries", countryRepo.findAllByOrderByNameEnAsc());
 
         return "index";
     }

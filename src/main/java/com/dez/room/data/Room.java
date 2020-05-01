@@ -1,7 +1,14 @@
 package com.dez.room.data;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class Room {
     @Id
@@ -11,47 +18,4 @@ public class Room {
     @ManyToOne
     private Country country;
     private boolean lamp;
-
-
-    public Room() {
-    }
-
-    public Room(String name, Country country, boolean lamp) {
-        this.name = name;
-        this.country = country;
-        this.lamp = lamp;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Country getCountry() {
-        return country;
-    }
-
-    public void setCountry(Country country) {
-        this.country = country;
-    }
-
-    public boolean isLamp() {
-        return lamp;
-    }
-
-    public void setLamp(boolean lamp) {
-        this.lamp = lamp;
-    }
-
 }

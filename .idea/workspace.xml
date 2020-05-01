@@ -7,30 +7,22 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dez/room/Controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/Controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dez/room/Controller/RoomController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/Repo/CountryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dez/room/Repo/CountryRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dez/room/config/WebSocketConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/data/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dez/room/data/Country.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/data/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dez/room/data/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dez/room/utils/WebUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/header.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dez/room/RoomsWithLampApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-test.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dez/room/Controller/IndexController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/Controller/RoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dez/room/Controller/RoomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/config/WebSocketConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dez/room/config/WebSocketConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/Repo/CountryRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dez/room/Repo/CountryRepo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/data/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dez/room/data/Country.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/data/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dez/room/data/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dez/room/utils/WebUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/country-list-after.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/country-list-before.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/room-list-after.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/room-list-before.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dez/room/RoomsWithLampApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dez/room/IntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dez/room/IntegrationTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +72,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -105,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WebsocketTest">
+  <component name="RunManager" selected="Spring Boot.RoomsWithLampApplication">
     <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="room" />
       <extension name="coverage">
@@ -194,9 +187,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.WebsocketTest" />
-        <item itemvalue="JUnit.IndexIntegrationTest" />
-        <item itemvalue="JUnit.IndexIntegrationTest.addRoomTest" />
-        <item itemvalue="JUnit.IndexIntegrationTest.countryВefinitionTest" />
         <item itemvalue="JUnit.UnitTest.getIpTest" />
       </list>
     </recent_temporary>
@@ -215,7 +205,8 @@
       <workItem from="1588203649609" duration="2342000" />
       <workItem from="1588231328097" duration="15264000" />
       <workItem from="1588261814640" duration="30821000" />
-      <workItem from="1588325404450" duration="25493000" />
+      <workItem from="1588325404450" duration="26746000" />
+      <workItem from="1588365684241" duration="2163000" />
     </task>
     <servers />
   </component>

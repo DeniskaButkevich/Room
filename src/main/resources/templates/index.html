@@ -31,7 +31,7 @@
                     <select class="form-control" th:value="${room != null ? room.name : ''}"
                             id="exampleFormControlSelect1" name="id" title="country">
                         <th:block th:each="country : ${countries}">
-                            <option th:value="${country.id}" th:text="${country.name_en}"></option>
+                            <option th:value="${country.id}" th:text="${country.nameEn}"></option>
                         </th:block>
                     </select>
                 </div>
@@ -59,15 +59,15 @@
             <tr th:id="'th-' + *{id}" th:attrappend="class=${room.lamp == true ? 'lamp-active' : ''}">
                 <th scope="row">[[*{id}]]</th>
                 <td>[[*{name}]]</td>
-                <td>[[*{country.name_en}]]</td>
-                <th:block th:if="${room.country.name_en == myCountry}">
+                <td>[[*{country.nameEn}]]</td>
+                <th:block th:if="${room.country.nameEn == myCountry}">
                     <td>
                         <button class="btn btn-primary"
                                 th:onclick="'location.href=&quot;room/' + ${room.id} + '&quot;'">come in
                         </button>
                     </td>
                 </th:block>
-                <th:block th:unless="${room.country.name_en == myCountry}">
+                <th:block th:unless="${room.country.nameEn == myCountry}">
                     <td>
                         <button type="submit" class="btn btn-primary" th:onclick="alert('your country is different')">
                             come in
